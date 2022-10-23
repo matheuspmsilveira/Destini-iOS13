@@ -57,8 +57,8 @@ struct StoryBrain {
     }
             
     mutating func nextStory(choice: String) {
-                
         let currentStory = stories[storyNumber]
+        
         if choice == currentStory.choice1 {
             storyNumber = currentStory.choice1Destination
         } else if choice == currentStory.choice2 {
